@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="div-note">
+  <form action="/add" method="POST">
+    <textarea name="note" class="note" placeholder="Enter Note"></textarea>
+    <input type=submit class="submit-btn" value="Add Note">
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+.div-note {
+  margin: 5px auto;
+  width: 500px;
+}
+
+.note {
+  margin-top: 50%;
+  border-style: none;
+  font-family: cursive;
+  font-size: 16px;
+  width: 35vw;
+  height: 25vw;
+  resize: none;
+}
+
+.submit-btn {
+  margin-left: 30vw;
+  height: 50px;
+  width: 100px;
+  background-color: rgb(238, 79, 79);
+  border-style: none;
+  border-radius: 35px;
+  color: white;
+  font-style: bold;
+}
+
+body {
+  background: linear-gradient(#e7bd6f);
+}

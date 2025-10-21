@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% for note in notes %}
+{% block body %}
+<p>{{ note.date_created.date() }}</p>
+{% endblock %}
+{% endfor %}
