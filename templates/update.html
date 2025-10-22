@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="div-note">
+  <form action="/update-note/{{ note.id }}" method="POST">
+    <textarea name="new-note" class="note" placeholder="Enter Note">{{ note.note }}</textarea>
+    <input type=submit class="submit-btn" value="Update Note">
+  </form>
+</div>
+
+{% endblock %}

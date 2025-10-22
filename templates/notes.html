@@ -3,9 +3,29 @@
 {% block head %}
 {% endblock %}
 
-{% for note in notes %}
 {% block body %}
-<p>{{ note.note }}</p>
-<p>{{ note.date_created.date() }}</p>
+
+
+<div class="table-div">
+    {% if notes|length < 1 %}
+    <h1>No notes have been added yet<a href="/add" class="add-note-link" >Add note</a></h1>
+    {% else %}
+    {% endif %}
+    <table border="1">
+        <tr>
+            <th>Note</th>
+            <th>Date Created</th>
+            <th>Action</th>
+        </tr>
+
+        {% for note in notes %}
+        <tr>
+            <th>{{ note.id }}. {{ note.note }}</th>
+            <th>{{ note.date_created.date() }}</th>
+            <th><a href="/delete/{{ note.id }}">Delete</a><br><a href="/update/{{ note.id }}">Update</a></th>
+        </tr>
+        {% endfor %}
+
+    </table>
+</div>
 {% endblock %}
-{% endfor %}
