@@ -69,5 +69,6 @@ h1 {
   border-radius: 15px;
   color: white;
   font-style: bold;
-  margin-bottom: 550px;
+  position: relative;
+  top: -48px;
 }
